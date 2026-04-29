@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoiceForge Reader - Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555555;
+    --accent: #0066cc;
+    --warning: #d9534f;
+    --border: #e5e5e5;
+    --card: #f7f7f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111214;
+      --fg: #e8e8ea;
+      --muted: #a0a0a8;
+      --accent: #5aa9ff;
+      --warning: #ff6b6b;
+      --border: #2a2b2f;
+      --card: #1a1b1f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0 0 8px;
+  }
+  h2 {
+    font-size: 1.35em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+  h3 {
+    font-size: 1.08em;
+    margin-top: 1.5em;
+    margin-bottom: 0.3em;
+  }
+  p, ul, ol { margin: 0.6em 0; }
+  ul, ol { padding-left: 1.4em; }
+  li { margin: 0.25em 0; }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  a:hover { border-bottom-color: var(--accent); }
+  .meta {
+    color: var(--muted);
+    font-size: 0.95em;
+  }
+  .callout {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    border-radius: 4px;
+    margin: 1.2em 0;
+  }
+  .callout.warning {
+    border-left-color: var(--warning);
+  }
+  .callout.warning strong {
+    color: var(--warning);
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9em;
+    text-align: center;
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    main { padding: 20px 16px 48px; }
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1.2em; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="meta"><strong>VoiceForge Reader</strong> - text-to-speech for pasted and shared text</p>
+    <p class="meta">Last Updated: April 29, 2026</p>
+    <p class="meta">Effective Date: April 29, 2026</p>
+  </header>
+
+  <section id="introduction">
+    <h2>1. Introduction</h2>
+    <p>VoiceForge Reader is an iOS and iPadOS app that reads pasted, selected, or shared text aloud. This Privacy Policy explains what information the app handles, how speech generation works, and how you can control your data.</p>
+    <p>The app has no user accounts, no logins, no advertising SDKs, no analytics SDKs, no tracking SDKs, and no developer-operated backend. However, VoiceForge Reader is not fully offline: the text you ask the app to read is sent to an external text-to-speech endpoint to generate audio.</p>
+    <p>The developer is based in Montreal, Quebec, Canada. This policy is written to align with Canada's Personal Information Protection and Electronic Documents Act (PIPEDA) and Quebec's Act Respecting the Protection of Personal Information in the Private Sector (Law 25).</p>
+  </section>
+
+  <section id="information-handled">
+    <h2>2. Information the App Handles</h2>
+    <p>VoiceForge Reader handles only the information needed to read text aloud:</p>
+    <ul>
+      <li><strong>Text you provide:</strong> text pasted into the main app, text selected in another app, shared URLs, readable page text, and other text content sent through the iOS Share Sheet.</li>
+      <li><strong>Speech settings:</strong> selected voice, language, speed, and related playback preferences.</li>
+      <li><strong>Generated audio:</strong> audio returned by the text-to-speech endpoint so the app can play it on your device.</li>
+      <li><strong>Basic local app state:</strong> temporary playback state, selected language, onboarding status, and similar app preferences.</li>
+    </ul>
+    <p>VoiceForge Reader does not ask for your name, email address, phone number, precise location, contacts, calendar, photos, camera, microphone recording, HealthKit data, payment information, or social media accounts.</p>
+  </section>
+
+  <section id="tts-processing">
+    <h2>3. Text-to-Speech Processing</h2>
+    <div class="callout warning">
+      <p><strong>Important:</strong> when you tap Speak or use the Share Extension, the text you want to hear is transmitted over the internet to an external Edge/Bing text-to-speech endpoint so that audio can be generated and returned to your device.</p>
+    </div>
+    <p>VoiceForge Reader currently uses a direct Edge/Bing consumer text-to-speech endpoint for speech synthesis. The developer does not operate this endpoint and does not receive the text or generated audio from it.</p>
+    <p>Only the text you choose to read, the selected voice, and speech formatting needed for synthesis are sent for this request. The generated audio is returned to your device for playback.</p>
+    <p>Because the speech endpoint is operated by a third party, its network handling and retention practices are outside the developer's direct control. Do not use VoiceForge Reader for passwords, private keys, financial secrets, medical records, legal secrets, or other sensitive text that you do not want transmitted to an external speech service.</p>
+  </section>
+
+  <section id="main-app-share-extension">
+    <h2>4. Main App and Share Extension</h2>
+    <h3>4.1 Main App</h3>
+    <p>In the main app, you may type or paste text and tap Speak. If you use Paste and Speak, the app reads the current text value from the system pasteboard only after you choose that action.</p>
+
+    <h3>4.2 Share Extension</h3>
+    <p>The Share Extension can receive text, selected text, URLs, HTML, and readable data from other apps through the iOS Share Sheet. The extension extracts readable text and starts speech generation for that shared content.</p>
+    <p>In the current beta architecture, Share Extension playback runs inside the extension UI lifetime. If you close the Share Sheet, playback may stop.</p>
+  </section>
+
+  <section id="storage-security">
+    <h2>5. Storage and Security</h2>
+    <p>VoiceForge Reader does not operate a server or database. The developer does not store your text, audio, or usage history on a remote backend.</p>
+    <ul>
+      <li>Generated audio may be kept temporarily in app memory while playback, restart, pause, seek, and word highlighting features are active.</li>
+      <li>Speech settings and app preferences may be stored locally on your device.</li>
+      <li>Deleting the app removes local app data controlled by VoiceForge Reader.</li>
+    </ul>
+    <p>Your device's built-in protections, such as passcode, Face ID, Touch ID, and full-disk encryption, help protect local app data.</p>
+  </section>
+
+  <section id="no-tracking">
+    <h2>6. No Advertising, Analytics, or Tracking</h2>
+    <p>VoiceForge Reader does not include advertising SDKs, analytics SDKs, crash-reporting SDKs, tracking SDKs, or data broker integrations. The app does not track you across apps or websites and does not sell, rent, or trade your data.</p>
+  </section>
+
+  <section id="children">
+    <h2>7. Children's Privacy</h2>
+    <p>VoiceForge Reader is a general text-to-speech utility and is not designed to knowingly collect information from children. The app has no accounts and does not ask for personal contact information. If a parent or guardian has concerns, they can delete the app to remove local app data.</p>
+  </section>
+
+  <section id="your-choices">
+    <h2>8. Your Choices</h2>
+    <ul>
+      <li><strong>Choose what to read:</strong> only send text to the app that you are comfortable transmitting to an external speech service.</li>
+      <li><strong>Clear text:</strong> delete or replace text in the input field before using Speak.</li>
+      <li><strong>Control pasteboard use:</strong> use Paste and Speak only when you want the app to read the current pasteboard text.</li>
+      <li><strong>Stop playback:</strong> use the Stop control to end current playback.</li>
+      <li><strong>Delete local data:</strong> delete the app from your device to remove local app data.</li>
+    </ul>
+  </section>
+
+  <section id="changes">
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy to reflect new app features, legal requirements, or clarifications. Material changes that affect how text or other data is handled will be reflected with an updated date and, when appropriate, in-app or release-note notice.</p>
+  </section>
+
+  <section id="contact">
+    <h2>10. Contact Us</h2>
+    <p>If you have questions, concerns, or requests regarding this Privacy Policy or your data, please contact:</p>
+    <p>
+      <strong>Roman</strong><br>
+      Developer of VoiceForge Reader<br>
+      Montreal, Quebec, Canada<br>
+      Email: <a href="mailto:risvoice@gmail.com">risvoice@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>Copyright 2026 VoiceForge Reader. All rights reserved.</p>
+  </footer>
+</main>
+</body>
+</html>

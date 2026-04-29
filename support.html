@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoiceForge Reader - Support</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555555;
+    --accent: #0066cc;
+    --border: #e5e5e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111214;
+      --fg: #e8e8ea;
+      --muted: #a0a0a8;
+      --accent: #5aa9ff;
+      --border: #2a2b2f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0 0 8px;
+  }
+  h2 {
+    font-size: 1.35em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+  p, ul { margin: 0.6em 0; }
+  ul { padding-left: 1.4em; }
+  li { margin: 0.25em 0; }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  a:hover { border-bottom-color: var(--accent); }
+  .meta {
+    color: var(--muted);
+    font-size: 0.95em;
+  }
+  .faq-question {
+    font-weight: 600;
+    margin-top: 1.4em;
+    margin-bottom: 0.2em;
+  }
+  .faq-answer {
+    margin-top: 0.2em;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9em;
+    text-align: center;
+  }
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    main { padding: 20px 16px 48px; }
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1.2em; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Support</h1>
+    <p class="meta"><strong>VoiceForge Reader</strong> - text-to-speech for pasted and shared text.</p>
+  </header>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you need help with VoiceForge Reader, please email <a href="mailto:risvoice@gmail.com">risvoice@gmail.com</a>. We respond as soon as possible (Eastern Time, Montreal, Canada).</p>
+  </section>
+
+  <section id="about">
+    <h2>About VoiceForge Reader</h2>
+    <p>VoiceForge Reader reads pasted, selected, or shared text aloud on iPhone and iPad. You can use the main app to paste text and tap Speak, or use the Share Extension from apps such as Notes and Safari.</p>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <p class="faq-question">Does VoiceForge Reader require an account?</p>
+    <p class="faq-answer">No. There are no accounts, logins, subscriptions, or user profiles.</p>
+
+    <p class="faq-question">Does speech work offline?</p>
+    <p class="faq-answer">No. VoiceForge Reader needs an internet connection because speech is generated through an external text-to-speech endpoint.</p>
+
+    <p class="faq-question">Why does playback stop when I close the Share Sheet?</p>
+    <p class="faq-answer">In the current beta, Share Extension playback runs inside the extension UI lifetime. Keep the Share Sheet open if you expect continued reading.</p>
+
+    <p class="faq-question">What text can I read?</p>
+    <p class="faq-answer">You can paste text in the main app or share selected text, plain text, URLs, and readable page content through the iOS Share Sheet.</p>
+
+    <p class="faq-question">How is my text handled?</p>
+    <p class="faq-answer">The text you ask the app to read is sent to an external Edge/Bing text-to-speech endpoint to generate audio. The developer does not operate that endpoint and does not receive your text. Please read the <a href="privacy.html">Privacy Policy</a> before reading sensitive content.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p><a href="privacy.html">Read the VoiceForge Reader Privacy Policy</a></p>
+  </section>
+
+  <footer>
+    <p>Copyright 2026 Roman - VoiceForge Reader</p>
+  </footer>
+</main>
+</body>
+</html>
