@@ -115,8 +115,17 @@
     <p class="faq-question">Does speech work offline?</p>
     <p class="faq-answer">No. VoiceForge Reader needs an internet connection because speech is generated through an external text-to-speech endpoint.</p>
 
-    <p class="faq-question">Why does playback stop when I close the Share Sheet?</p>
-    <p class="faq-answer">In the current beta, Share Extension playback runs inside the extension UI lifetime. Keep the Share Sheet open if you expect continued reading.</p>
+    <p class="faq-question">How does the iOS Share Extension work? Does playback stop if I close it?</p>
+    <p class="faq-answer">When you choose Share -> VoiceForge for text or images, the Share Extension instantly launches and redirects the content to the main VoiceForge application via a secure handoff. Playback starts immediately in the main application, meaning you can close the extension or switch to other apps without interrupting the reading.</p>
+
+    <p class="faq-question">How do I use the Document Scanner / OCR feature?</p>
+    <p class="faq-answer">Tap "Scan" in the main application toolbar to launch the custom camera feed. Fit the printed page or book into the camera view and snap a picture. You can crop the borders and rotate the image before clicking "Done". VoiceForge will recognize the text on-device using local Vision frameworks and automatically load it for reading and translation.</p>
+
+    <p class="faq-question">How does Translate & Speak translation work?</p>
+    <p class="faq-answer">Open Settings inside VoiceForge, enable "Translate & Speak", and select your desired destination voice/language. When you press Play on any scanned or pasted text, the system translation services will translate the sentences on-device and read them aloud in the target voice.</p>
+
+    <p class="faq-question">Is text recognition (OCR) and translation secure?</p>
+    <p class="faq-answer">Yes, text recognition and translation are processed entirely locally on your physical device. Images from your camera or photo library are never sent to any external server. Only the plain text results are transmitted to the text-to-speech engine to synthesize audio.</p>
 
     <p class="faq-question">What text can I read?</p>
     <p class="faq-answer">You can paste text in the main app or share selected text, plain text, URLs, and readable page content through the iOS Share Sheet.</p>
