@@ -52,8 +52,8 @@
     margin-top: 2em;
     margin-bottom: 0.5em;
   }
-  p, ul { margin: 0.6em 0; }
-  ul { padding-left: 1.4em; }
+  p, ul, ol { margin: 0.6em 0; }
+  ul, ol { padding-left: 1.4em; }
   li { margin: 0.25em 0; }
   a {
     color: var(--accent);
@@ -91,57 +91,60 @@
 </head>
 <body>
 <main>
+  <nav aria-label="Language" class="meta"><a href="support.html" lang="en" aria-current="page">English</a> · <a href="support-fr.html" lang="fr-CA">Français</a> · <a href="support-ru.html" lang="ru">Русский</a></nav>
   <header>
-    <h1>Support</h1>
-    <p class="meta"><strong>VoiceForge Reader</strong> - text-to-speech for pasted and shared text.</p>
+    <h1>VoiceForge Reader Support</h1>
+    <p class="meta">iPhone and iPad · Updated October 20, 2026 · Version 1.1.0</p>
   </header>
-
   <section id="contact">
-    <h2>Contact</h2>
-    <p>If you need help with VoiceForge Reader, please email <a href="mailto:emailtorisel@gmail.com">emailtorisel@gmail.com</a>. We respond as soon as possible (Eastern Time, Montreal, Canada).</p>
+    <h2>Get help</h2>
+    <p>Email <a href="mailto:emailtorisel@gmail.com">emailtorisel@gmail.com</a>. Include your app version, iOS version and a short description of what happened. Please do not send passwords or private reading content. Support is based in Montreal, Canada (Eastern Time).</p>
   </section>
-
-  <section id="about">
-    <h2>About VoiceForge Reader</h2>
-    <p>VoiceForge Reader reads pasted, selected, or shared text aloud on iPhone and iPad. You can use the main app to paste text and tap Speak, or use the Share Extension from apps such as Notes and Safari.</p>
+  <section id="start">
+    <h2>Start reading</h2>
+    <p>Paste or type text, import a PDF or text file, scan a printed page, or choose VoiceForge from another app's Share Sheet. Select a voice and tap Speak. No account or subscription is required.</p>
+    <p>Edge voices need internet and your permission to send the selected text to Microsoft. Installed Apple System voices synthesize speech on your device. Language resources may need downloading before offline use.</p>
   </section>
-
-  <section id="faq">
-    <h2>Frequently Asked Questions</h2>
-
-    <p class="faq-question">Does VoiceForge Reader require an account?</p>
-    <p class="faq-answer">No. There are no accounts, logins, subscriptions, or user profiles.</p>
-
-    <p class="faq-question">Does speech work offline?</p>
-    <p class="faq-answer">No. VoiceForge Reader needs an internet connection because speech is generated through an external text-to-speech endpoint.</p>
-
-    <p class="faq-question">How does the iOS Share Extension work? Does playback stop if I close it?</p>
-    <p class="faq-answer">When you choose Share -> VoiceForge for text or images, the Share Extension instantly launches and redirects the content to the main VoiceForge application via a secure handoff. Playback starts immediately in the main application, meaning you can close the extension or switch to other apps without interrupting the reading.</p>
-
-    <p class="faq-question">How do I use the Document Scanner / OCR feature?</p>
-    <p class="faq-answer">Tap "Scan" in the main application toolbar to launch the custom camera feed. Fit the printed page or book into the camera view and snap a picture. You can crop the borders and rotate the image before clicking "Done". VoiceForge will recognize the text on-device using local Vision frameworks and automatically load it for reading and translation.</p>
-
-    <p class="faq-question">How does Translate & Speak translation work?</p>
-    <p class="faq-answer">Open Settings inside VoiceForge, enable "Translate & Speak", and select your desired destination voice/language. When you press Play on any scanned or pasted text, the system translation services will translate the sentences on-device and read them aloud in the target voice.</p>
-
-    <p class="faq-question">Is text recognition (OCR) and translation secure?</p>
-    <p class="faq-answer">Yes, text recognition and translation are processed entirely locally on your physical device. Images from your camera or photo library are never sent to any external server. Only the plain text results are transmitted to the text-to-speech engine to synthesize audio.</p>
-
-    <p class="faq-question">What text can I read?</p>
-    <p class="faq-answer">You can paste text in the main app or share selected text, plain text, URLs, and readable page content through the iOS Share Sheet.</p>
-
-    <p class="faq-question">How is my text handled?</p>
-    <p class="faq-answer">The text you ask the app to read is sent to an external Edge/Bing text-to-speech endpoint to generate audio. The developer does not operate that endpoint and does not receive your text. Please read the <a href="privacy.html">Privacy Policy</a> before reading sensitive content.</p>
+  <section id="action-button">
+    <h2>Set up the Action Button</h2>
+    <p>On an iPhone with an Action Button, this lets you copy text in another app and hold the button to start reading in the background.</p>
+    <ol>
+      <li>Open VoiceForge Settings → Action Button. The same guide is available in Help.</li>
+      <li>In <strong>Add</strong>, tap <strong>Add VoiceForge Shortcut</strong> and confirm the import in Apple Shortcuts. Keep its name <strong>VoiceForge Reader</strong> so the guide can find it.</li>
+      <li>In <strong>Assign</strong>, tap <strong>Open Action Button Settings</strong>. The installed shortcut attempts to open that iPhone Settings page. If iOS does not open it, go to iPhone Settings → Action Button manually.</li>
+      <li>Swipe to <strong>Shortcut</strong>, tap <strong>Choose a Shortcut</strong>, and select <strong>VoiceForge Reader</strong>. iOS requires you to make this selection yourself.</li>
+      <li>In <strong>Try it</strong>, copy the example text, switch to another app, then press and hold the Action Button. Allow any expected first-use Shortcuts permission. Reading should begin without opening the reader.</li>
+    </ol>
+    <p>Before using an Edge voice from a shortcut, give Edge data transfer permission inside VoiceForge. Otherwise choose Apple System voices. A background request cannot grant permission. Keep Apple Shortcuts installed; changing the shortcut name can prevent the setup link from finding it. The inner Settings shortcut link depends on the installed iOS version, so the manual route remains available.</p>
   </section>
-
+  <section id="voices">
+    <h2>Choose and download voices</h2>
+    <p>Choose <strong>Edge</strong> or <strong>System</strong> in the voice controls. Each source remembers its own language and voice. Use the preview button to hear the selected voice. Edge previews use Microsoft's service and require the same permission as reading.</p>
+    <p>For more Apple voices, follow the download guidance in VoiceForge Settings. Voice downloads are managed in iOS Settings under Accessibility → Read &amp; Speak (or Spoken Content on earlier iOS versions) → Voices. Names vary by iOS language and version. Wait for the download to finish, then return to VoiceForge.</p>
+    <p>If an online voice is unavailable, a reading may fall back to a suitable installed Apple voice. VoiceForge cannot guarantee the availability of Microsoft's consumer speech endpoint. If playback fails, check the message in the reader and try a System voice.</p>
+  </section>
+  <section id="translation">
+    <h2>Translate &amp; Speak</h2>
+    <p>Enable Translate &amp; Speak and choose a destination language and voice. Apple Translation supports selected language pairs and may ask to download language resources. The translation is processed on the device. Follow the original and translation in synchronized panes, or use the view control to show only the translated reader.</p>
+    <p>Speech follows your chosen voice source: Edge sends the text to be spoken to Microsoft; installed System voices render locally. Translation availability and speech voice availability are separate.</p>
+  </section>
+  <section id="documents">
+    <h2>Scan and share documents</h2>
+    <p>Tap Scan, allow Camera access, photograph a page, adjust its crop and rotation, then confirm. OCR and PDF/text extraction happen locally. VoiceForge does not upload the image or PDF to recognize it; extracted text can be sent to Microsoft if you choose an Edge voice.</p>
+    <p>From Files or another app, share a PDF, text file, image or selected text to VoiceForge. The extension extracts text and attempts to hand it to the main reader. A host app or OS restriction can prevent that handoff. Password-protected, image-only or unusually large PDFs may require unlocking, scanning or a smaller selection first.</p>
+    <p>Safari can also offer VoiceForge as a Translation Provider on supported iOS versions. Other browsers control their own selection menus; Share → VoiceForge is the common alternative.</p>
+  </section>
+  <section id="playback">
+    <h2>Playback and visible information</h2>
+    <p>Pause, seek, restart or change speed from 0.5× to 2.0×. The reader can continue in the background. On compatible devices, a Live Activity supplies Lock Screen and Dynamic Island controls. Its title comes from the beginning of your text and can be visible to someone looking at your screen. Manage this in iOS Settings → Apps → VoiceForge → Live Activities, or end the activity.</p>
+    <p>If speech stops, check the reader's message, Edge connection and consent, or the installed System voice. VoiceForge does not need microphone access.</p>
+  </section>
   <section id="privacy">
-    <h2>Privacy Policy</h2>
-    <p><a href="privacy.html">Read the VoiceForge Reader Privacy Policy</a></p>
+    <h2>Privacy controls</h2>
+    <p>Use System voices for local speech, or review and withdraw Edge data transfer permission in VoiceForge Settings. Control Camera and Live Activities in iOS Settings. Read the <a href="privacy.html">Privacy Policy</a> for temporary shared text, backups, provider handling and deletion limits.</p>
+    <p>Removing VoiceForge does not remove its shortcut from Apple Shortcuts. Older experimental server builds may also leave a credential in iOS Keychain. Contact support for removal guidance without including the password.</p>
   </section>
-
-  <footer>
-    <p>Copyright 2026 Roman - VoiceForge Reader</p>
-  </footer>
+  <footer><p>Copyright 2026 Roman Serper · VoiceForge Reader</p></footer>
 </main>
 </body>
 </html>
