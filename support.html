@@ -73,6 +73,14 @@
   .faq-answer {
     margin-top: 0.2em;
   }
+  .open-source {
+    margin: 24px 0 30px;
+    padding: 4px 18px 14px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+  }
+  .open-source h2 { margin-top: 0.75em; }
   footer {
     margin-top: 48px;
     padding-top: 20px;
@@ -96,6 +104,12 @@
     <h1>VoiceForge Reader Support</h1>
     <p class="meta">iPhone and iPad · Updated October 20, 2026 · Version 1.1.0</p>
   </header>
+  <section id="open-source" class="open-source">
+    <h2>Open-source notices and LGPL source</h2>
+    <p>VoiceForge Reader 1.1.0 (35) includes a Swift adaptation of authentication code from <a href="https://github.com/rany2/edge-tts">rany2/edge-tts</a>, licensed under <strong>LGPL-3.0-only</strong>.</p>
+    <p><a href="https://github.com/risvoice/voiceforge-legal/releases/download/ios-1.1.0-build-35-oss/VoiceForge-1.1.0-35-LGPL-Relink.zip">Download component source and relinking materials (ZIP, 9.6 MB)</a>. The archive includes the component source, application object code, licenses and English instructions for relinking with a modified component.</p>
+    <p>This is developer material, not an app installer. Relinking requires compatible Xcode; installing a modified app requires your own Apple signing and provisioning. The application objects are provided for LGPLv3 section 4(d)(0) recombination; the proprietary application source is not included.</p>
+  </section>
   <section id="contact">
     <h2>Get help</h2>
     <p>Email <a href="mailto:emailtorisel@gmail.com">emailtorisel@gmail.com</a>. Include your app version, iOS version and a short description of what happened. Please do not send passwords or private reading content. Support is based in Montreal, Canada (Eastern Time).</p>
