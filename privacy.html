@@ -109,23 +109,23 @@
   <header>
     <h1>Privacy Policy</h1>
     <p class="meta"><strong>VoiceForge Reader</strong> for iPhone and iPad</p>
-    <p class="meta">Updated: October 20, 2026 · Release 1.1.0</p>
+    <p class="meta">Updated: October 28, 2026 · Release 1.1.1</p>
   </header>
 
   <section id="overview">
     <h2>Your text, your choice of voice</h2>
     <p>VoiceForge Reader reads text you paste, type, scan, import or share. It has no account system, advertising, app analytics SDK, tracking SDK or developer-operated speech server. Roman Serper, based in Montreal, Quebec, Canada, develops the app.</p>
     <div class="callout">
-      <p><strong>Apple System voices</strong> synthesize speech on your device using installed voices. <strong>Edge online voices</strong> send the text you choose to read to Microsoft to generate speech. Version 1.1.0 asks for your permission before an Edge request and lets you withdraw it in Settings.</p>
+      <p><strong>Apple System voices</strong> synthesize speech on your device using installed voices. <strong>Edge online voices</strong> send the text you choose to read to Microsoft to generate speech. Version 1.1.1 asks for your permission during the first launch, before any Edge request: the language step explains that the chosen text goes to Microsoft and its button reads Continue and Allow Edge.</p>
     </div>
-    <p>This policy describes version 1.1.0. Older versions may not include the Apple System voice choice or the Edge permission control. Update before relying on these controls.</p>
+    <p>This policy describes version 1.1.1. Older versions may not include the Apple System voice choice or the first-launch Edge permission step. Update before relying on these controls.</p>
   </section>
 
   <section id="content">
     <h2>Content and permissions</h2>
     <p>The app handles the text you provide, selected language and voice, playback speed, generated audio and temporary reading state. A document or the text extracted from it may contain personal information; the app does not need to know who you are.</p>
     <ul>
-      <li><strong>Clipboard:</strong> the main app reads copied text when you choose a paste action. The optional VoiceForge Reader shortcut reads the clipboard in Apple Shortcuts and passes that text to VoiceForge when you run it, including with the Action Button. iOS and Shortcuts may ask for permission.</li>
+      <li><strong>Clipboard:</strong> the main app reads copied text when you choose a paste action. With Read clipboard immediately (on by default), an Action Button press reads the clipboard directly instead of showing a paste sheet, and iOS may show its own paste alert while Paste from Other Apps is still Ask. The optional VoiceForge Reader shortcut reads the clipboard in Apple Shortcuts and passes that text to VoiceForge when you run it, including with the Action Button. iOS and Shortcuts may ask for permission.</li>
       <li><strong>Camera:</strong> optional permission lets you photograph printed text. You can decline it and still paste, share or import text.</li>
       <li><strong>Files and shared images:</strong> only content you select or share is opened. Importing a cloud-backed file may cause its file provider to download it.</li>
     </ul>
@@ -143,7 +143,7 @@
     <p>After your permission, Edge voices send the text to be spoken, the selected voice and speech settings to Microsoft's Edge/Bing consumer speech endpoint over an encrypted HTTPS/WebSocket connection. Microsoft returns synthesized audio and word timing information. Voice previews also make an Edge speech request, using sample text.</p>
     <p>Microsoft receives ordinary connection information such as your IP address, request headers and randomly generated request/session tokens. The app does not attach an account login, advertising identifier or stable VoiceForge user identifier. The developer does not receive these speech requests or operate Microsoft's service. VoiceForge is not affiliated with Microsoft.</p>
     <p>Microsoft's <a href="https://learn.microsoft.com/en-us/legal/microsoft-edge/privacy#read-aloud">Edge Read aloud privacy notice</a> says text and generated audio are deleted immediately after conversion in Microsoft Edge. VoiceForge connects directly to the consumer speech endpoint; the developer cannot independently verify that this retention statement covers this client, or promise a retention period, processing location or other server-side handling. Microsoft's <a href="https://privacy.microsoft.com/privacystatement">Privacy Statement</a> provides further information about Microsoft services.</p>
-    <p>Choose an installed Apple System voice if you want speech synthesis to stay on your device, particularly for sensitive text. In Settings, you can review Edge data transfer permission and withdraw it. Withdrawal stops Edge reading or previews and selects Apple System voices. It prevents future requests; it cannot recall content already transmitted. A shortcut, extension or background reading request cannot grant permission on your behalf.</p>
+    <p>Choose an installed Apple System voice if you want speech synthesis to stay on your device, particularly for sensitive text. The voice source in Settings is also the control: once an installed Apple System voice is selected, Edge reading and previews stop and no further text is sent. There is no separate consent switch to find. This prevents future requests; it cannot recall content already transmitted. A shortcut, extension or background reading request cannot grant permission on your behalf.</p>
   </section>
 
   <section id="storage">
@@ -151,16 +151,17 @@
     <ul>
       <li><strong>Reading session:</strong> text, translations and generated audio are normally held in app memory for playback, seeking and word highlighting. Clearing the editor or ending a reading session does not guarantee every system-managed copy disappears immediately.</li>
       <li><strong>Share handoff:</strong> the Share Extension extracts text, including OCR or PDF text, and temporarily places the full result in a shared App Group container so the main app can read it. The main app removes the handoff value after consuming it. An interrupted handoff can leave it there until later consumption, overwrite or removal of the app container. If the host cannot open the main app, an extension may present its own reader.</li>
-      <li><strong>Preferences:</strong> language, voices, speed, setup state and Edge permission are stored locally in app/App Group preferences. Device backups and restores can include local app data according to your Apple settings.</li>
+      <li><strong>Preferences:</strong> language, voices, speed, setup state and the first-launch Edge decision are stored locally in app/App Group preferences. Device backups and restores can include local app data according to your Apple settings.</li>
       <li><strong>Lock Screen and Dynamic Island:</strong> a Live Activity can show a document title derived from the beginning of your text, playback state and controls outside the app. People who can see your screen may see that title. You can end the activity or disable Live Activities for VoiceForge in iOS Settings.</li>
       <li><strong>Diagnostics:</strong> technical system logs can contain voice/language selections, text lengths, playback and network errors. VoiceForge does not deliberately log the text being read and includes no remote crash-reporting or analytics SDK.</li>
     </ul>
-    <p>The optional shortcut is copied into Apple Shortcuts and remains there until you remove it in Shortcuts. Older experimental builds could save a server credential in iOS Keychain; that item can survive app deletion. Version 1.1.0 does not read or use that credential. Contact support for version-specific removal help; do not send the credential itself.</p>
+    <p>The optional shortcut is copied into Apple Shortcuts and remains there until you remove it in Shortcuts. Older experimental builds could save a server credential in iOS Keychain; that item can survive app deletion. Version 1.1.1 does not read or use that credential. Contact support for version-specific removal help; do not send the credential itself.</p>
   </section>
 
   <section id="choices">
     <h2>Your controls and privacy requests</h2>
-    <p>Choose Apple System voices for local speech, withdraw Edge permission in the app, clear text you no longer need, remove the shortcut in Shortcuts, and manage Camera and Live Activities permissions in iOS Settings. Deleting the app removes its ordinary local containers, subject to system backups and the Keychain exception above. It does not delete content in the original app, Files, clipboard, Shortcuts or external services.</p>
+    <p>Three settings are on by default and each can be switched off in Settings: Translate &amp; Speak (translates and reads in your chosen language), Read clipboard immediately (an Action Button press reads the clipboard directly instead of showing a paste sheet) and Reading While Locked (keeps a reading that is already playing going while the screen is locked). VoiceForge asks for the Edge decision once during the first launch, so a fresh install needs no setup in Settings.</p>
+    <p>Choose Apple System voices for local speech, clear text you no longer need, remove the shortcut in Shortcuts, and manage Camera and Live Activities permissions in iOS Settings. Deleting the app removes its ordinary local containers, subject to system backups and the Keychain exception above. It does not delete content in the original app, Files, clipboard, Shortcuts or external services.</p>
     <p>The app does not sell personal data or track you across apps or websites. It is a general reading utility and is not directed specifically at children.</p>
     <p>You may contact the developer to ask about access, correction, deletion or another privacy concern. There is no developer database of reading history to retrieve or erase. For content already sent to Microsoft or managed by Apple, those providers' controls and privacy processes also apply.</p>
   </section>
