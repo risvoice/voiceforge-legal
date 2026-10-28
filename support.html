@@ -102,12 +102,12 @@
   <nav aria-label="Language" class="meta"><a href="support.html" lang="en" aria-current="page">English</a> · <a href="support-fr.html" lang="fr-CA">Français</a> · <a href="support-ru.html" lang="ru">Русский</a></nav>
   <header>
     <h1>VoiceForge Reader Support</h1>
-    <p class="meta">iPhone and iPad · Updated October 20, 2026 · Version 1.1.0</p>
+    <p class="meta">iPhone and iPad · Updated October 28, 2026 · Version 1.1.1</p>
   </header>
   <section id="open-source" class="open-source">
     <h2>Open-source notices and LGPL source</h2>
-    <p>VoiceForge Reader 1.1.0 (35) includes a Swift adaptation of authentication code from <a href="https://github.com/rany2/edge-tts">rany2/edge-tts</a>, licensed under <strong>LGPL-3.0-only</strong>.</p>
-    <p><a href="https://github.com/risvoice/voiceforge-legal/releases/download/ios-1.1.0-build-35-oss/VoiceForge-1.1.0-35-LGPL-Relink.zip">Download component source and relinking materials (ZIP, 9.6 MB)</a>. The archive includes the component source, application object code, licenses and English instructions for relinking with a modified component.</p>
+    <p>VoiceForge Reader 1.1.1 (38) includes a Swift adaptation of authentication code from <a href="https://github.com/rany2/edge-tts">rany2/edge-tts</a>, licensed under <strong>LGPL-3.0-only</strong>.</p>
+    <p><a href="https://github.com/risvoice/voiceforge-legal/releases/download/ios-1.1.1-build-38-oss/VoiceForge-1.1.1-38-LGPL-Relink.zip">Download component source and relinking materials (ZIP, 9.6 MB)</a>. The archive includes the component source, application object code, licenses and English instructions for relinking with a modified component.</p>
     <p>This is developer material, not an app installer. Relinking requires compatible Xcode; installing a modified app requires your own Apple signing and provisioning. The application objects are provided for LGPLv3 section 4(d)(0) recombination; the proprietary application source is not included.</p>
   </section>
   <section id="contact">
@@ -117,19 +117,19 @@
   <section id="start">
     <h2>Start reading</h2>
     <p>Paste or type text, import a PDF or text file, scan a printed page, or choose VoiceForge from another app's Share Sheet. Select a voice and tap Speak. No account or subscription is required.</p>
-    <p>Edge voices need internet and your permission to send the selected text to Microsoft. Installed Apple System voices synthesize speech on your device. Language resources may need downloading before offline use.</p>
+    <p>Edge voices need internet and your permission to send the selected text to Microsoft; VoiceForge asks once during the first launch. Installed Apple System voices synthesize speech on your device, and choosing one later stops Edge transfer. Language resources may need downloading before offline use.</p>
   </section>
   <section id="action-button">
     <h2>Set up the Action Button</h2>
     <p>On an iPhone with an Action Button, this lets you copy text in another app and hold the button to start reading in the background.</p>
     <ol>
       <li>Open VoiceForge Settings → Action Button. The same guide is available in Help.</li>
-      <li>In <strong>Add</strong>, tap <strong>Add VoiceForge Shortcut</strong> and confirm the import in Apple Shortcuts. Keep its name <strong>VoiceForge Reader</strong> so the guide can find it.</li>
-      <li>In <strong>Assign</strong>, tap <strong>Open Action Button Settings</strong>. The installed shortcut attempts to open that iPhone Settings page. If iOS does not open it, go to iPhone Settings → Action Button manually.</li>
-      <li>Swipe to <strong>Shortcut</strong>, tap <strong>Choose a Shortcut</strong>, and select <strong>VoiceForge Reader</strong>. iOS requires you to make this selection yourself.</li>
-      <li>In <strong>Try it</strong>, copy the example text, switch to another app, then press and hold the Action Button. Allow any expected first-use Shortcuts permission. Reading should begin without opening the reader.</li>
+      <li>Tap <strong>Add the shortcut and open settings</strong>. The first time, iPhone hands the shortcut to Apple Shortcuts: choose <strong>Shortcuts</strong> in the menu, tap <strong>Add</strong>, then come back to VoiceForge. Keep the name <strong>VoiceForge Reader</strong> so the guide can find it.</li>
+      <li>Tap the same button again. It now opens the Action Button settings page by itself; if iOS does not open it, go to iPhone Settings → Action Button manually.</li>
+      <li>Swipe to <strong>Shortcut</strong>, tap <strong>Choose a Shortcut</strong>, then select <strong>VoiceForge Reader</strong>. iOS requires you to make this selection yourself.</li>
+      <li><strong>Next: try it</strong> — copy the example text, switch to another app, then press and hold the Action Button. Allow the expected first-use Shortcuts permission. Reading begins without opening the reader.</li>
     </ol>
-    <p>Before using an Edge voice from a shortcut, give Edge data transfer permission inside VoiceForge. Otherwise choose Apple System voices. A background request cannot grant permission. Keep Apple Shortcuts installed; changing the shortcut name can prevent the setup link from finding it. The inner Settings shortcut link depends on the installed iOS version, so the manual route remains available.</p>
+    <p>VoiceForge asks for Edge data transfer permission once, during the first launch. If that step was skipped, readings started from a shortcut use an installed Apple System voice. To stop sending text to Microsoft later, choose an installed Apple System voice in Settings: there is no separate consent switch, and a background request cannot grant permission. Keep Apple Shortcuts installed; changing the shortcut name can prevent the guide from finding it. The Settings link depends on the installed iOS version, so the manual route remains available.</p>
   </section>
   <section id="voices">
     <h2>Choose and download voices</h2>
@@ -155,7 +155,7 @@
   </section>
   <section id="privacy">
     <h2>Privacy controls</h2>
-    <p>Use System voices for local speech, or review and withdraw Edge data transfer permission in VoiceForge Settings. Control Camera and Live Activities in iOS Settings. Read the <a href="privacy.html">Privacy Policy</a> for temporary shared text, backups, provider handling and deletion limits.</p>
+    <p>Use System voices for local speech, or choose an installed Apple System voice in VoiceForge Settings to stop sending text to Microsoft. Control Camera and Live Activities in iOS Settings. Read the <a href="privacy.html">Privacy Policy</a> for temporary shared text, backups, provider handling and deletion limits.</p>
     <p>Removing VoiceForge does not remove its shortcut from Apple Shortcuts. Older experimental server builds may also leave a credential in iOS Keychain. Contact support for removal guidance without including the password.</p>
   </section>
   <footer><p>Copyright 2026 Roman Serper · VoiceForge Reader</p></footer>
